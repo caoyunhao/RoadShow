@@ -41,16 +41,16 @@ public class CarControl : MonoBehaviour {
 	// Update is called once per frame
 
  	void FixedUpdate () {//每一帧的调用函数
-        /*键盘控制
+        //键盘控制
         float h = Input.GetAxis("Horizontal");//左右 输入范围(-1,1)
         float v = Input.GetAxis("Vertical"); //上下 输入范围(-1, 1)
-        float handbroke = Input.GetAxis("Jump");//空格键是手刹*/
+        float handbroke = Input.GetAxis("Jump");//空格键是手刹
 
       //  方向盘控制
-        float h = Input.GetAxis("Logisteer");//左右 输入范围(0,2)
-		float v = 1-Input.GetAxis("Speed"); //上下 输入范围(0, 2)
-        float handbroke = 1 - Input.GetAxis("Brake");//手刹
-		print(h);
+        //float h = Input.GetAxis("Logisteer");//左右 输入范围(0,2)
+		//float v = 1-Input.GetAxis("Speed"); //上下 输入范围(0, 2)
+        //float handbroke = 1 - Input.GetAxis("Brake");//手刹
+		//print(h);
 		//Debug.Log ("brake is "+handbroke);
 
         wheelcoilder[0].steerAngle = wheelcoilder[1].steerAngle = h* MaxAngle;    //车的转弯角度
